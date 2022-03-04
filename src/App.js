@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let Op=["Android", "Blckberry", "iPhone", "Windows Phone"];
+  let Manu= ["Samsung", "HTC", "Microsoft", "Apple"];
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +19,16 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+
+      <div>
+          <h1>Mobile Operating System</h1>
+          <ul>{Op.map((e)=>(<li>{e}</li>))}</ul>
+      </div>
+      <div>
+          <h1>Mobile Manufaturers</h1>
+          <ul>{Manu.map((e)=>(<li>{e}</li>))}</ul>
+      </div>
     </div>
   );
 }
